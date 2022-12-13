@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: re-rethinking-symbolic-racism.aux
+The style file: apsr.bst
+Database file #1: rethink.bib
+You've used 21 entries,
+            2874 wiz_defined-function locations,
+            770 strings with 8522 characters,
+and the built_in function-call counts, 96084 in all, are:
+= -- 15858
+> -- 1066
+< -- 0
++ -- 7492
+- -- 377
+* -- 8292
+:= -- 19101
+add.period$ -- 85
+call.type$ -- 21
+change.case$ -- 273
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 322
+empty$ -- 721
+format.name$ -- 406
+if$ -- 17280
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 23
+newline$ -- 90
+num.names$ -- 238
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 315
+quote$ -- 0
+skip$ -- 283
+stack$ -- 0
+substring$ -- 22512
+swap$ -- 47
+text.length$ -- 294
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 0
+while$ -- 493
+width$ -- 0
+write$ -- 298
