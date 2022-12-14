@@ -216,6 +216,77 @@ m5_16 <- polr(resent_workway_m ~ soph + female + dem_edugroup_x +
                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
               data = df_2016,  method = c("probit"))
 
+
+####OLS versions for robustness
+##2012 models
+m2_12_ols <- lm(resent_deserve ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2012)
+m3_12_ols <- lm(resent_slavery ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2012)
+m4_12_ols <- lm(resent_try ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2012)
+m5_12_ols <- lm(resent_workway ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2012)
+
+##2016 analysis
+m2_16_ols <- lm(resent_deserve ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2016)
+m3_16_ols <- lm(resent_slavery ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2016)
+m4_16_ols <- lm(resent_try ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2016)
+m5_16_ols <- lm(resent_workway ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
+              data = df_2016)
+
+stargazer(m2_12_ols, m3_12_ols, m2_16_ols, m3_16_ols, #m2_20, m3_20,
+          title="Structural Attributions 2012-2016 (OLS)", 
+          type="latex", style = "apsr",
+          align=TRUE, out="tables/probits_structural_ols.tex",
+          covariate.labels = c("Political Sophistication",
+                               "Female", "Education",
+                               "Economic Individualism",
+                               "Egalitarianism", "South", "Democrat",
+                               "Church Attendance", "Ideology",
+                               "Black Feeling Therm.", "Age",
+                               "Income"),
+          dep.var.labels = c("Question 1 (2012)", 
+                             "Question 2 (2012)",
+                             "Question 1 (2016)",
+                             "Question 2 (2016)"))
+
+stargazer(m4_12_ols, m5_12_ols, m4_16_ols, m5_16_ols, #m4_20, m5_20,
+          title="Individual Attributions 2012-2016 (OLS)", 
+          type="latex", style = "apsr",
+          align=TRUE, out="tables/probits_individual_OLS.tex",
+          covariate.labels = c("Political Sophistication",
+                               "Female", "Education",
+                               "Economic Individualism",
+                               "Egalitarianism", "South", "Democrat",
+                               "Church Attendance", "Ideology",
+                               "Black Feeling Therm.", "Age",
+                               "Income"),
+          dep.var.labels = c("Question 1 (2012)", 
+                             "Question 2 (2012)",
+                             "Question 1 (2016)",
+                             "Question 2 (2016)"))
+
+
 ##2020 analysis - NO SOCIAL MEDIA
 #m2_20 <- polr(resent_deserve_m ~ soph + female + dem_edugroup_x +
 #                egal_scale + south + pid_dum_dem + relig_church +
