@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  13 DEC 2022 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  20 JUL 2023 09:50
 entering extended mode
 **./re-rethinking-symbolic-racism.tex
 (re-rethinking-symbolic-racism.tex
@@ -494,7 +494,11 @@ backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count288
 \l__pdf_internal_box=\box54
-) (re-rethinking-symbolic-racism.aux)
+) (re-rethinking-symbolic-racism.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `re-rethinking-symbolic-racism.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -605,117 +609,58 @@ LaTeX Info: Redefining \nameref on input line 35.
 
 {C:/Users/Oscar Wilde/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [
 3]
-<fig/google-trends.png, id=111, 867.24pt x 289.08pt>
+<fig/google-trends.png, id=99, 867.24pt x 289.08pt>
 File: fig/google-trends.png Graphic file (type png)
 <use fig/google-trends.png>
-Package pdftex.def Info: fig/google-trends.png  used on input line 57.
+Package pdftex.def Info: fig/google-trends.png  used on input line 59.
 (pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (7.22847pt too wide) in paragraph at lines 57--62
+Overfull \hbox (7.22847pt too wide) in paragraph at lines 59--64
 [][] 
  []
 
-[4 <./fig/google-trends.png>] [5] [6]
+[4 <./fig/google-trends.png>] [5] [6] [7]
 <fig/soph-education.png, id=156, 722.7pt x 361.35pt>
 File: fig/soph-education.png Graphic file (type png)
 <use fig/soph-education.png>
-Package pdftex.def Info: fig/soph-education.png  used on input line 112.
+Package pdftex.def Info: fig/soph-education.png  used on input line 116.
 (pdftex.def)             Requested size: 361.3491pt x 180.67456pt.
- [7]
-<fig/sophistication-desc.png, id=177, 253.9086pt x 143.5764pt>
-File: fig/sophistication-desc.png Graphic file (type png)
-<use fig/sophistication-desc.png>
-Package pdftex.def Info: fig/sophistication-desc.png  used on input line 129.
-(pdftex.def)             Requested size: 253.90797pt x 143.57603pt.
  [8 <./fig/soph-education.png>]
-<fig/symbolic-racism-desc.png, id=187, 253.9086pt x 143.5764pt>
-File: fig/symbolic-racism-desc.png Graphic file (type png)
-<use fig/symbolic-racism-desc.png>
-Package pdftex.def Info: fig/symbolic-racism-desc.png  used on input line 142.
-(pdftex.def)             Requested size: 253.90797pt x 143.57603pt.
-
-[9 <./fig/sophistication-desc.png> <./fig/symbolic-racism-desc.png>]
-<fig/response-by-soph.png, id=198, 1300.86pt x 433.62pt>
-File: fig/response-by-soph.png Graphic file (type png)
-<use fig/response-by-soph.png>
-Package pdftex.def Info: fig/response-by-soph.png  used on input line 155.
-(pdftex.def)             Requested size: 520.3348pt x 173.44492pt.
-
-Overfull \hbox (50.57977pt too wide) in paragraph at lines 155--156
+[9] [10] [11]
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 321--362
  [][] 
  []
 
-[10 <./fig/response-by-soph.png>] [11] [12] [13] [14]
-<fig/qq-12.png, id=235, 405.01312pt x 228.855pt>
-File: fig/qq-12.png Graphic file (type png)
-<use fig/qq-12.png>
-Package pdftex.def Info: fig/qq-12.png  used on input line 319.
-(pdftex.def)             Requested size: 142.26378pt x 80.3868pt.
-<fig/qq-16.png, id=236, 405.01312pt x 228.855pt>
-File: fig/qq-16.png Graphic file (type png)
-<use fig/qq-16.png>
-Package pdftex.def Info: fig/qq-16.png  used on input line 321.
-(pdftex.def)             Requested size: 142.26378pt x 80.3868pt.
-<fig/resid-fitted-12.png, id=237, 253.9086pt x 143.5764pt>
-File: fig/resid-fitted-12.png Graphic file (type png)
-<use fig/resid-fitted-12.png>
-Package pdftex.def Info: fig/resid-fitted-12.png  used on input line 331.
-(pdftex.def)             Requested size: 142.26378pt x 80.44385pt.
-<fig/resid-fitted-16.png, id=238, 253.9086pt x 143.5764pt>
-File: fig/resid-fitted-16.png Graphic file (type png)
-<use fig/resid-fitted-16.png>
-Package pdftex.def Info: fig/resid-fitted-16.png  used on input line 333.
-(pdftex.def)             Requested size: 142.26378pt x 80.44385pt.
- [15 <./fig/qq-12.png> <./fig/qq-16.png>] [16 <./fig/resid-fitted-12.png> <./fi
-g/resid-fitted-16.png>]
-<fig/fitted_residuals_12.png, id=265, 578.16pt x 578.16pt>
-File: fig/fitted_residuals_12.png Graphic file (type png)
-<use fig/fitted_residuals_12.png>
-Package pdftex.def Info: fig/fitted_residuals_12.png  used on input line 394.
-(pdftex.def)             Requested size: 317.98898pt x 317.98898pt.
-<fig/fitted_residuals_16.png, id=269, 578.16pt x 578.16pt>
-File: fig/fitted_residuals_16.png Graphic file (type png)
-<use fig/fitted_residuals_16.png>
-Package pdftex.def Info: fig/fitted_residuals_16.png  used on input line 407.
-(pdftex.def)             Requested size: 317.98898pt x 317.98898pt.
+[12]
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 370--405
+ [][] 
+ []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17 <./fig/fitted_residuals_12.png>]
-<fig/qq_12.png, id=281, 578.16pt x 578.16pt>
-File: fig/qq_12.png Graphic file (type png)
-<use fig/qq_12.png>
-Package pdftex.def Info: fig/qq_12.png  used on input line 420.
-(pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-<fig/qq_16.png, id=282, 578.16pt x 578.16pt>
-File: fig/qq_16.png Graphic file (type png)
-<use fig/qq_16.png>
-Package pdftex.def Info: fig/qq_16.png  used on input line 422.
-(pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
- [18 <./fig/fitted_residuals_16.png>]
-[19 <./fig/qq_12.png> <./fig/qq_16.png>] [20]
-(re-rethinking-symbolic-racism.bbl [21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+[13] [14] [15] (re-rethinking-symbolic-racism.bbl [16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
 
 (re-rethinking-symbolic-racism.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
 Package rerunfilecheck Info: File `re-rethinking-symbolic-racism.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 508AF7F8ED9F7997527B7EF365B1C901;675.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+(rerunfilecheck)             Checksum: 012860EF6ECD1F1E0DB6F41D901ED2CC;464.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
  ) 
 Here is how much of TeX's memory you used:
- 9851 strings out of 480930
- 159902 string characters out of 2896945
- 464174 words of memory out of 3000000
- 25438 multiletter control sequences out of 15000+200000
- 542006 words of font info for 57 fonts, out of 3000000 for 9000
+ 9742 strings out of 480930
+ 157775 string characters out of 2896945
+ 455530 words of memory out of 3000000
+ 25361 multiletter control sequences out of 15000+200000
+ 541701 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,16n,62p,2013b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,16n,50p,2013b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Oscar Wilde/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmmi12.pfb><C:/Users/Oscar Wilde/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Oscar Wilde/AppData/Local/Prog
@@ -734,9 +679,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Os
 car Wilde/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 10.pfb><C:/Users/Oscar Wilde/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb>
-Output written on re-rethinking-symbolic-racism.pdf (22 pages, 868207 bytes).
+Output written on re-rethinking-symbolic-racism.pdf (17 pages, 286680 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

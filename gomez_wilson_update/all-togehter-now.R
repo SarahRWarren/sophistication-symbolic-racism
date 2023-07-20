@@ -216,6 +216,105 @@ m5_16 <- polr(resent_workway_m ~ soph + female + dem_edugroup_x +
                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + inc_incgroup_pre,
               data = df_2016,  method = c("probit"))
 
+###with social media
+
+##2016 analysis
+sm5_16 <- polr(resent_deserve_m ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + paprofile_freqpolit_socmedia +
+                 inc_incgroup_pre,
+              data = df_2016,  method = c("probit"))
+sm6_16 <- polr(resent_slavery_m ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + paprofile_freqpolit_socmedia +
+                 inc_incgroup_pre,
+              data = df_2016,  method = c("probit"))
+sm7_16 <- polr(resent_try_m ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + paprofile_freqpolit_socmedia +
+                 inc_incgroup_pre,
+              data = df_2016,  method = c("probit"))
+sm8_16 <- polr(resent_workway_m ~ soph + female + dem_edugroup_x +
+                econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                paprofile_libcon_self + ftcasi_black + dem_age_r_x + paprofile_freqpolit_socmedia +
+                 inc_incgroup_pre,
+              data = df_2016,  method = c("probit"))
+
+
+stargazer(sm5_16, sm6_16, sm7_16, sm8_16, #m2_20, m3_20,
+          title="Symbolic Racism Scale Items 2016", 
+          type="latex", style = "apsr",
+          align=TRUE, out="tables/probits_social_media.tex",
+          covariate.labels = c("Political Sophistication",
+                               "Female", "Education",
+                               "Economic Individualism",
+                               "Egalitarianism", "South", "Democrat",
+                               "Church Attendance", "Ideology",
+                               "Black Feeling Therm.", "Age", 
+                               "Social Media Use",
+                               "Income"),
+          dep.var.labels = c("Structural 1", 
+                             "Question 2 (Structural)",
+                             "Question 3",
+                             "Question 4"))
+
+cor(df_2016$paprofile_freqpolit_socmedia, df_2016$soph, 
+    method = "pearson")
+
+cor(df_2012$paprofile_freqpolit_socmedia, df_2012$soph, 
+    method = "pearson")
+
+df_2012 <- df_2012 %>%
+  mutate(paprofile_freqpolit_socmedia = paprofile_freqpolit_socmedia,
+         paprofile_freqpolit_socmedia = recode(paprofile_freqpolit_socmedia,
+                                 "1" = 5,
+                                 "2" = 4,
+                                 "3" = 3,
+                                 "4" = 2,
+                                 "5" = 1))
+                                 
+##2012 Social Media
+sm1_12 <- polr(resent_deserve_m ~ soph + female + dem_edugroup_x +
+                 econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + as.factor(paprofile_freqpolit_socmedia) +
+                 inc_incgroup_pre,
+               data = df_2012,  method = c("probit"))
+sm2_12 <- polr(resent_slavery_m ~ soph + female + dem_edugroup_x +
+                 econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + as.factor(paprofile_freqpolit_socmedia) +
+                 inc_incgroup_pre,
+               data = df_2012,  method = c("probit"))
+sm3_12 <- polr(resent_try_m ~ soph + female + dem_edugroup_x +
+                 econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + as.factor(paprofile_freqpolit_socmedia) +
+                 inc_incgroup_pre,
+               data = df_2012,  method = c("probit"))
+sm4_12 <- polr(resent_workway_m ~ soph + female + dem_edugroup_x +
+                 econ_indiv + egal_scale + south + pid_dum_dem + relig_church +
+                 paprofile_libcon_self + ftcasi_black + dem_age_r_x + as.factor(paprofile_freqpolit_socmedia) +
+                 inc_incgroup_pre,
+               data = df_2012,  method = c("probit"))
+
+
+stargazer(sm1_12, sm2_12, sm3_12, sm4_12, #m2_20, m3_20,
+          title="Symbolic Racism Scale Items 2012", 
+          type="latex", style = "apsr",
+          align=TRUE, out="tables/probits_social_media_12.tex",
+          covariate.labels = c("Political Sophistication",
+                               "Female", "Education",
+                               "Economic Individualism",
+                               "Egalitarianism", "South", "Democrat",
+                               "Church Attendance", "Ideology",
+                               "Black Feeling Therm.", "Age",
+                               "Soc.Med: Never", "Soc.Med: Rarely",
+                               "Soc.Med: Some", "Soc.Med: A lot",
+                               "Income"),
+          dep.var.labels = c("Structural 1", 
+                             "Structural 2",
+                             "Individual 1",
+                             "Individual 2"))
+
+
 
 ####OLS versions for robustness
 ##2012 models

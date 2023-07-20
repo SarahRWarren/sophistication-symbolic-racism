@@ -10,7 +10,7 @@ anes_2016 <- read_dta("data/anes_timeseries_2016.dta") %>%
   dplyr::select(V162213, V162212, V162214, V162211, V162072, V162073b, V162076b,
          V161516, V161515, V161342, V161267, V163003, V161244,
          V161270, V161155, V161126, V162312, V162243, V162244, V162245, V162246,
-         V162183, V162184,V161244, V161310x, V161361x) %>%
+         V162183, V162184,V161244, V161310x, V161361x, V161495) %>%
   dplyr::rename(dem_age_r_x = V161267)
 
 anes_2016 <- anes_2016 %>%
@@ -37,7 +37,8 @@ anes_2016 <- anes_2016 %>%
               pid_self = V161155,
               paprofile_libcon_self = V161126,
               dem_edugroup_x = V161270,
-              ftcasi_black = V162312)
+              ftcasi_black = V162312,
+              paprofile_freqpolit_socmedia = V161495)
 
 ##drop NA values
 anes_2016 <- anes_2016 %>%
@@ -63,7 +64,8 @@ anes_2016 <- anes_2016 %>%
   subset(egal_fewerprobs > 0) %>%
   subset(govrole_big > 0) %>%
   subset(govrole_market > 0) %>%
-  subset(gender_respondent_x < 3)
+  subset(gender_respondent_x < 3) %>%
+  subset(paprofile_freqpolit_socmedia > -1)
 
 anes_2016 <- anes_2016 %>%
   mutate(knowl_senmaj = as.numeric(knowl_senmaj),

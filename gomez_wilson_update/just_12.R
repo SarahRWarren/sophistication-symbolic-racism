@@ -13,7 +13,8 @@ anes_2012 <- read_dta("data/anes_timeseries_2012.dta") %>%
          relig_church, pid_self, paprofile_libcon_self,
          dem_edugroup_x, dem_raceeth_x, dem_age_r_x, inc_incgroup_pre,
          ftcasi_black, egal_equal, egal_toofar, egal_bigprob, egal_worryless, 
-         egal_notbigprob, egal_fewerprobs, govrole_big, govrole_market) %>%
+         egal_notbigprob, egal_fewerprobs, govrole_big, govrole_market,
+         paprofile_freqpolit_socmedia) %>%
   subset(ofcrec_vp_correct >= 0) %>%
   subset(inc_incgroup_pre >= 0) %>%
   subset(dem_age_r_x >= 0) %>%
@@ -38,6 +39,7 @@ anes_2012 <- read_dta("data/anes_timeseries_2012.dta") %>%
   subset(egal_fewerprobs > 0) %>%
   subset(govrole_big > 0) %>%
   subset(govrole_market > 0) %>%
+  subset(paprofile_freqpolit_socmedia > 0) %>%
     mutate(knowl_senmaj = as.numeric(knowl_senmaj),
          knowl_senmaj = recode(knowl_senmaj,
                                "1" = "1",

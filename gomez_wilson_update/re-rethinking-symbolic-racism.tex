@@ -46,6 +46,8 @@ Previously, \cite{gomez_rethinking_2006} demonstrated that political sophisticat
 
 The rest of this paper proceeds as follows: Section I introduces the empirical background and theory behind heterogeneous attributions for the causes of poverty, specifically among black Americans. Section II introduces the data and my empirical approach, including relevant descriptive statistics. Section III presents the main findings and Section IV prevents relevant model diagnostics. Section V concludes.
 
+
+
 \section{Background and Theory}
 \cite{gomez_political_2001, gomez_rethinking_2006} articulate a theory of heterogeneous attribution in which sophisticates and non-sophisticates in the public leverage different information and cognitive processes when evaluating political phenomena. Political sophistication, or the breadth and depth of one's political knowledge, enables individuals to make broad and nuanced attributions about the underlying causes of political phenomena, including black poverty. Conversely, less sophisticated individuals tend to make proximal attributions. Sophisticates, therefore, are much more likely to make complex, structural attributions, while non-sophisticates are more likely to blame individuals for their own circumstances. It is therefore no surprise that, in their evaluation of the 1986 and 2000 American National Election Study's (ANES) symbolic racism items, low sophisticates almost exclusively make individualist attributions. In other words, a nontrivial proportion of low sophisticates may have been incorrectly labeled as having racial animus, when in fact their individualist attributions may not reflect true animus, but simply low sophistication and a cognitive inability to make higher-level attributions \citep{gomez_rethinking_2006}. In other words, these low sophisticates were to suddenly acquire a great deal of political information, making them politically sophisticated, we should expect, \textit{ceteris paribus}, their attributions to shift from individualistic to structural.
 
@@ -100,7 +102,9 @@ These four questions allow me to evaluate whether less sophisticated individual 
 \[\text{Answered Yes} = \alpha + \beta_1\text{Political Sophistication} + \beta_{n\times k-1}\text{Controls}\]
 
 \subsection{Independent Variables}
-The main explanatory variable in my analysis is political sophistication, or the breadth and depth of an individual's political knowledge. The operationalization of political sophistication has long been a matter of concern \citep{luskin_measuring_1987}, compounded by changing survey questions between surveys, changes in political leadership, and what counts as a ``correct" answer to political knowledge questions. Conceptually, measures of political sophistication aspire to capture a mixture of institutional knowledge and political awareness, and to assess the degree of cognitive complexity with which one engages political phenomena. Like \cite{gomez_rethinking_2006}, I construct an additive political sophistication scale (rescaled to range from 0 to 1) based on five political awareness and knowledge questions on the 2012 and 2016 ANES. These questions ask respondents to recognize the names of the sitting Vice President of the United States, the Chief Justice of the Supreme Court, and the Speaker of the House. Respondents are also asked to identify the majority party in the House and Senate.\footnote{Following \cite{gomez_rethinking_2006}, I code partially correct responses as correct. For example, when asked what office John Roberts holds, respondents who responded ``Supreme Court Justice" would be marked partially correct, because they did not note that Roberts is the \textit{Chief} Justice. Despite their, these answers indicate a sufficient degree of political knowledge to be considered ``sophisticated."} Importantly, this measure is indeed a function of political interest and cognitive complexity, evaluated using \cite{cacioppo_dispositional_1996} ``need for cognition" scale (see also: \cite{gomez_cognitive_2006}).
+The main explanatory variable in standard analyses is political sophistication, or the breadth and depth of an individual's political knowledge. The operationalization of political sophistication has long been a matter of concern \citep{luskin_measuring_1987}, compounded by changing survey questions between surveys, changes in political leadership, and what counts as a ``correct" answer to political knowledge questions. Conceptually, measures of political sophistication aspire to capture a mixture of institutional knowledge and political awareness, and to assess the degree of cognitive complexity with which one engages political phenomena. Like \cite{gomez_rethinking_2006}, I construct an additive political sophistication scale (rescaled to range from 0 to 1) based on five political awareness and knowledge questions on the 2012 and 2016 ANES. These questions ask respondents to recognize the names of the sitting Vice President of the United States, the Chief Justice of the Supreme Court, and the Speaker of the House. Respondents are also asked to identify the majority party in the House and Senate.\footnote{Following \cite{gomez_rethinking_2006}, I code partially correct responses as correct. For example, when asked what office John Roberts holds, respondents who responded ``Supreme Court Justice" would be marked partially correct, because they did not note that Roberts is the \textit{Chief} Justice. Despite this, these answers indicate a sufficient degree of political knowledge to be considered ``sophisticated."} Importantly, this measure is indeed a function of political interest and cognitive complexity, evaluated using \cite{cacioppo_dispositional_1996} ``need for cognition" scale (see also: \cite{gomez_cognitive_2006}).
+
+However, I theorize that the public has ``absorbed" structuralist explanations from the information-saturated environment in the 21st Century and, therefore, that this attribution is no longer a product of political sophistication. We should, however, expect the likelihood of a structuralist attribution to increase alongside their passive media consumption. As a measure of passive media consumption, I use social media usage. After replication Gomez and Wilson's analysis, I introduce an independent variable measuring social media usage into the model. In 2012, the ANES asked respondents to characterize how often they learned about politics on social media using a 5pt scale ranging from ``A lot" to "Does Not Apply," indicating respondents have no social media accounts. In 2016, the ANES asked respondents how many days a week they used social media sites like Facebook and Twitter, measured continuously on a $0-7$ scale. While these coarse measures do not necessarily preclude someone using social media to actively, rather than passively, grow their political knowledge, it is more likely that social media usage leads to an increased knowledge in current political events, not political knowledge questions. Bolstering this intuition, the correlation between social media usage and political sophistication is weak and negative in both 2012 ($-0.007$) and 2016 ($-0.0599$).
 
 \subsubsection{Relevant Controls}
 Wherever possible, I match the control variables included in my model to those in Gomez and Wilson's (2006) original specifications, with the goal of accounting for the influence of factors other than political sophistication on individuals' explanations of black socioeconomic disadvantage. To begin, I include a battery of demographic items, including sex (female), age, education, region (South), income, and church attendance. Because the sample is only respondents who self-identified as non-Hispanic whites, no racial controls are used.
@@ -122,46 +126,46 @@ While there may be concerns that political sophistication is simply a product of
 In addition to demographic controls, I employ a set of attitudinal items long believed to be relevant in explaining individual's symbolic racism scores \citep{kinder_divided_1997, sears_symbolic_1988}. These include measures of both partisanship and ideology, on the assumption that structuralist as opposed to individual explanations for social disadvantage are a hallmark of liberal Democratic thinking. Following \cite{feldman_structure_1988}, I include measures of individualist and egalitarian value orientations, measured outside the domain of race. I am unable to replicate the individualism scale constructed by \cite{henry_symbolic_2002}, which the original analysis uses, because the ANES has reduced its individualist orientation items to two. I use both items and adjust my scale accordingly.
 
 
-\subsection{Descriptive Trends}
+%\subsection{Descriptive Trends}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1]{fig/sophistication-desc.png}
-	{\singlespacing
-		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
-			Notes: Explain the figure here
-	}}
-	\caption{Distribution of Sophistication Across Years}
-	\label{soph}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=1]{fig/sophistication-desc.png}
+%	{\singlespacing
+%		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
+%			Notes: Explain the figure here
+%	}}
+%	\caption{Distribution of Sophistication Across Years}
+%	\label{soph}
+%\end{figure}
 
-Before estimating my models, I present descriptive trends within the data so that readers have a more nuanced understanding of the underlying shape and distributions of key variables. Figure \ref{soph} shows the distribution of political sophistication scores across the sample in 2012 and 2016. While both distributions are left skewed, there are plenty of low-sophisticates in the sample, indicating that we have appropriate variation in the independent variable to comment on the behavior of high and low sophisticates. In 2012, sophistication scores range from $0-1$ with a mean of $0.69$; in 2016, the range is $0-1$ and the mean is $0.66$.
+%Before estimating my models, I present descriptive trends within the data so that readers have a more nuanced understanding of the underlying shape and distributions of key variables. Figure \ref{soph} shows the distribution of political sophistication scores across the sample in 2012 and 2016. While both distributions are left skewed, there are plenty of low-sophisticates in the sample, indicating that we have appropriate variation in the independent variable to comment on the behavior of high and low sophisticates. In 2012, sophistication scores range from $0-1$ with a mean of $0.69$; in 2016, the range is $0-1$ and the mean is $0.66$.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1]{fig/symbolic-racism-desc.png}
-	{\singlespacing
-		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
-			Notes: Explain the figure here
-	}}
-	\caption{Covariance in Symbolic Racism Score and Sophistication}
-	\label{symbol-rac}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=1]{fig/symbolic-racism-desc.png}
+%	{\singlespacing
+%		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
+%			Notes: Explain the figure here
+%	}}
+%	\caption{Covariance in Symbolic Racism Score and Sophistication}
+%	\label{symbol-rac}
+%\end{figure}
 
-Figure \ref{symbol-rac} plots respondents' symbolic racism scores against their political sophistication.  In 2012, symbolic racism scores range from $0.2-1$ with a mean of $0.73$; in 2016, the range is $0.2-1$ and the mean is $0.66$. The relationship between sophistication and symbolic racism is weakly negative. In general, as political sophistication increases, we observe a weak decrease in symbolic racism scores.
+%Figure \ref{symbol-rac} plots respondents' symbolic racism scores against their political sophistication.  In 2012, symbolic racism scores range from $0.2-1$ with a mean of $0.73$; in 2016, the range is $0.2-1$ and the mean is $0.66$. The relationship between sophistication and symbolic racism is weakly negative. In general, as political sophistication increases, we observe a weak decrease in symbolic racism scores.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.4]{fig/response-by-soph.png}
-	{\singlespacing
-		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
-			Notes: Explain the figure here
-	}}
-	\caption{Symbolic Racism Item Responses by Sophistication}
-	\label{response-soph}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=.4]{fig/response-by-soph.png}
+%	{\singlespacing
+%		\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
+%			Notes: Explain the figure here
+%	}}
+%	\caption{Symbolic Racism Item Responses by Sophistication}
+%	\label{response-soph}
+%\end{figure}
 
-Recall that \cite{gomez_rethinking_2006} assert that non-racists who are simply politically unsophisticated may be incorrectly classified as racist by standard measures of symbolic racism using data from the 20th Century. I argue that political sophistication in the 21st Century is easier to obtain than in the 20th century. That is, as political information proliferates, it is easier for people to become passively informed about the state of the world. If this is the case, then we should expect to see a high proportion of respondents classified as politically sophisticated and less clear-cut distinctions between high and low sophisticates. Indeed, Figure \ref{response-soph} shows that far more respondents are in the upper sophistication quadrant than any other and appear, as a group, ambivalent regarding whether black poverty is a product of individual failings or structural hardship. These descriptive trends bolster my expectation that we should find no significant relationship between political sophistication and the likelihood of making a structuralist attribution.
+%Recall that \cite{gomez_rethinking_2006} assert that non-racists who are simply politically unsophisticated may be incorrectly classified as racist by standard measures of symbolic racism using data from the 20th Century. I argue that political sophistication in the 21st Century is easier to obtain than in the 20th century. That is, as political information proliferates, it is easier for people to become passively informed about the state of the world. If this is the case, then we should expect to see a high proportion of respondents classified as politically sophisticated and less clear-cut distinctions between high and low sophisticates. Indeed, Figure \ref{response-soph} shows that far more respondents are in the upper sophistication quadrant than any other and appear, as a group, ambivalent regarding whether black poverty is a product of individual failings or structural hardship. These descriptive trends bolster my expectation that we should find no significant relationship between political sophistication and the likelihood of making a structuralist attribution.
 
 \section{Empirical Results}
 %corresponds to G&W06 Table 1
@@ -308,121 +312,166 @@ One way to interpret this result is that the information environment in the 21st
 \end{table} 
 
 
-\section{Diagnostics and Robustness}
-This section presents a series of diagnostic and fit tests in order to better contextualize the results presented above.
+\section{Social Media}
+YADA YADA
 
-\subsection{OLS Model}
-To examine the appropriateness of the analysis presented in \ref{ols}, I first fit a normal probability plot. This assesses the normality of the distribution of the underlying data by plotting observed data quantiles against quantiles from a normal distribution. If the data are normally distributed, the points on the normal probability plot should coalesce around the 45-degree line. Indeed, \ref{qq} shows that the points coalesce along the 45-degree line, indicating normally distributed data. While normally distributed data is not necessary for OLS to produce non-biased estimates, this plot gives us a better sense of the underlying distribution of the data we're using in our model.
-
-\begin{figure}[h!]
-	\centering
-	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/qq-12.png} }}%
-	\qquad
-	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/qq-16.png} }}%
-	\caption{Normal Q-Q Plots for 2012-2016 OLS Models}%
-	\label{qq}%
-\end{figure}
-
-To assess the OLS models for linearity and heteroskedasticity, as well as get a sense for whether there are outliers, I plot the residuals over the fitted values for both 2012 and 2016 models. If the data meet homoskedasticity assumptions, we should see the points ``bounce" randomly above and below the 0 line. Instead, there is a clear trend of higher residuals for lower fitted values and lower residuals for higher fitted values. Indeed, Bruesch-Pagan testing confirms that we can reject the null hypothesis of homoskedasticity (p = $0.00$ for both years).
-
-
-\begin{figure}%
-	\centering
-	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/resid-fitted-12.png} }}%
-	\qquad
-	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/resid-fitted-16.png} }}%
-	\caption{Residuals vs Fitted Values Plots for 2012-2016 OLS Models}%
-	\label{resid}%
-\end{figure}
-
-Given this, the model would be more appropriately estimated with heteroskedastic robust standard errors. Table \ref{rob} plots the original analysis from Table \ref{ols} in Columns 1 and 3 and the same models estimated with heteroskedastic robust standard errors in Columns 2 and 4. Substantively, the results do not change by much, nor does the  statistical significance.
-
-\begin{table}[!htbp] 
-	\centering 
-	\caption{OLS with Normal vs. Robust SEs} 
-	\label{rob} 
-		\begin{adjustbox}{width=1\textwidth}
+\begin{table}[!htbp] \centering 
+	\caption{Symbolic Racism Scale Items 2012} 
+	\label{} 
 	\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
 		\\[-1.8ex]\hline \\[-1.8ex] 
-		\\[-1.8ex] & \multicolumn{4}{c}{Symbolic Racism} \\ 
-		\\[-1.8ex] & \multicolumn{1}{c}{OLS} & \multicolumn{1}{c}{Heteroskedastic Robust SEs} & \multicolumn{1}{c}{OLS} & \multicolumn{1}{c}{Heteroskedastic Robust SEs} \\ 
-		& \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} \\ 
-		\\[-1.8ex] & \multicolumn{1}{c}{2012} & \multicolumn{1}{c}{2012} & \multicolumn{1}{c}{2016} & \multicolumn{1}{c}{2016}\\ 
+		\\[-1.8ex] & \multicolumn{1}{c}{Structural 1} & \multicolumn{1}{c}{Structural 2} & \multicolumn{1}{c}{Individual 1} & \multicolumn{1}{c}{Individual 2} \\ 
+		\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
 		\hline \\[-1.8ex] 
-		Political Sophistication & -0.078^{***} & -0.078^{***} & -0.057^{***} & -0.061^{***} \\ 
-		& (0.012) & (0.013) & (0.016) & (0.017) \\ 
-		Female & 0.001 & -0.0001 & 0.006 & 0.006 \\ 
-		& (0.006) & (0.007) & (0.006) & (0.006) \\ 
-		Education & -0.031^{***} & -0.031^{***} & -0.037^{***} & -0.038^{***} \\ 
-		& (0.003) & (0.003) & (0.004) & (0.004) \\ 
-		Economic Individualism & 0.076^{***} & 0.077^{***} & 0.087^{***} & 0.090^{***} \\ 
-		& (0.009) & (0.010) & (0.010) & (0.010) \\ 
-		Egalitarianism & -0.373^{***} & -0.384^{***} & -0.414^{***} & -0.438^{***} \\ 
-		& (0.023) & (0.026) & (0.025) & (0.028) \\ 
-		South & 0.021^{***} & 0.024^{***} & 0.036^{***} & 0.040^{***} \\ 
-		& (0.007) & (0.007) & (0.007) & (0.008) \\ 
-		Democrat & -0.018^{**} & -0.017^{*} & -0.082^{***} & -0.082^{***} \\ 
-		& (0.008) & (0.009) & (0.009) & (0.010) \\ 
-		Church Attendance & 0.011^{*} & 0.010 & -0.024^{***} & -0.025^{***} \\ 
-		& (0.006) & (0.007) & (0.007) & (0.008) \\ 
-		Ideology & 0.017^{***} & 0.018^{***} & 0.0004^{***} & 0.0004^{***} \\ 
-		& (0.003) & (0.003) & (0.0001) & (0.0001) \\ 
-		Black Feeling Therm. & -0.001^{***} & -0.001^{***} & -0.002^{***} & -0.002^{***} \\ 
-		& (0.0002) & (0.0002) & (0.0002) & (0.0002) \\ 
-		Age & -0.0002 & -0.0002 & 0.001^{***} & 0.001^{***} \\ 
-		& (0.0002) & (0.0002) & (0.0002) & (0.0002) \\ 
-		Income & 0.001^{**} & 0.001^{**} & -0.0003 & -0.0002 \\ 
-		& (0.0004) & (0.0004) & (0.001) & (0.001) \\ 
-		Constant & 1.061^{***} & 1.066^{***} & 1.185^{***} & 1.203^{***} \\ 
-		& (0.031) & (0.034) & (0.029) & (0.030) \\ 
-		N & \multicolumn{1}{c}{2,126} & \multicolumn{1}{c}{2,126} & \multicolumn{1}{c}{2,247} & \multicolumn{1}{c}{2,247} \\ 
-		R$^{2}$ & \multicolumn{1}{c}{0.441} & \multicolumn{1}{c}{0.451} & \multicolumn{1}{c}{0.459} & \multicolumn{1}{c}{0.475} \\ 
-		Adjusted R$^{2}$ & \multicolumn{1}{c}{0.438} & \multicolumn{1}{c}{0.448} & \multicolumn{1}{c}{0.456} & \multicolumn{1}{c}{0.472} \\ 
-		Residual Std. Error & \multicolumn{1}{c}{0.142 (df = 2113)} & \multicolumn{1}{c}{0.144 (df = 2113)} & \multicolumn{1}{c}{0.166 (df = 2234)} & \multicolumn{1}{c}{0.170 (df = 2234)} \\ 
-		F Statistic & \multicolumn{1}{c}{139.141$^{***}$ (df = 12; 2113)} &  & \multicolumn{1}{c}{157.899$^{***}$ (df = 12; 2234)} &  \\ 
+		Political Sophistication & -0.100 & -0.426^{***} & -0.590^{***} & -0.301^{***} \\ 
+		& (0.097) & (0.096) & (0.095) & (0.098) \\ 
+		Female & 0.047 & 0.047 & -0.065 & 0.062 \\ 
+		& (0.049) & (0.049) & (0.048) & (0.050) \\ 
+		Education & -0.110^{***} & -0.144^{***} & -0.222^{***} & -0.210^{***} \\ 
+		& (0.024) & (0.024) & (0.024) & (0.024) \\ 
+		Economic Individualism & 0.347^{***} & 0.378^{***} & 0.324^{***} & 0.498^{***} \\ 
+		& (0.073) & (0.072) & (0.071) & (0.074) \\ 
+		Egalitarianism & -2.216^{***} & -2.387^{***} & -1.795^{***} & -2.199^{***} \\ 
+		& (0.188) & (0.186) & (0.181) & (0.190) \\ 
+		South & 0.170^{***} & 0.102^{**} & 0.167^{***} & 0.097^{*} \\ 
+		& (0.052) & (0.052) & (0.051) & (0.053) \\ 
+		Democrat & -0.064 & -0.067 & -0.084 & -0.173^{***} \\ 
+		& (0.063) & (0.063) & (0.063) & (0.064) \\ 
+		Church Attendance & 0.116^{**} & 0.118^{**} & 0.073 & -0.005 \\ 
+		& (0.051) & (0.050) & (0.050) & (0.051) \\ 
+		Ideology & 0.097^{***} & 0.074^{***} & 0.117^{***} & 0.098^{***} \\ 
+		& (0.022) & (0.021) & (0.021) & (0.022) \\ 
+		Black Feeling Therm. & -0.007^{***} & -0.004^{***} & -0.011^{***} & -0.009^{***} \\ 
+		& (0.001) & (0.001) & (0.001) & (0.001) \\ 
+		Age & -0.001 & -0.006^{***} & -0.0002 & 0.002 \\ 
+		& (0.002) & (0.002) & (0.002) & (0.002) \\ 
+		Soc.Med: Never & 0.097 & -0.017 & 0.170 & -0.069 \\ 
+		& (0.111) & (0.111) & (0.109) & (0.113) \\ 
+		Soc.Med: Rarely & 0.199^{*} & 0.052 & 0.135 & -0.052 \\ 
+		& (0.113) & (0.113) & (0.110) & (0.114) \\ 
+		Soc.Med: Some & 0.319^{***} & 0.153 & 0.237^{**} & 0.127 \\ 
+		& (0.108) & (0.107) & (0.105) & (0.109) \\ 
+		Soc.Med: A lot & 0.188^{*} & 0.104 & 0.159 & 0.001 \\ 
+		& (0.105) & (0.105) & (0.103) & (0.107) \\ 
+		Income & 0.010^{***} & 0.007^{**} & 0.005 & -0.002 \\ 
+		& (0.003) & (0.003) & (0.003) & (0.003) \\ 
+		N & \multicolumn{1}{c}{2,097} & \multicolumn{1}{c}{2,097} & \multicolumn{1}{c}{2,097} & \multicolumn{1}{c}{2,097} \\ 
 		\hline \\[-1.8ex] 
 		\multicolumn{5}{l}{$^{*}$p $<$ .1; $^{**}$p $<$ .05; $^{***}$p $<$ .01} \\ 
 	\end{tabular} 
-\end{adjustbox}
 \end{table} 
 
-\subsection{Ordered Probit Models}
-I estimate surrogate residuals to run comparable diagnostics on my ordered probit models \citep{liu_residuals_2018}. Figure \ref{fitted-resid-12} shows the residuals over fitted values plots for each of the 2012 symbolic racism items, corresponding to Columns 1 and 2 in Table \ref{indiv} and Columns 1 and 2 in Table \ref{structure}. The surrogate residuals ``bounce" randomly around the zero line and do not demonstrate pronounced trends, suggesting that heteroskedasticity is not a concern for these models.
 
-\begin{figure}[h!]
-		\centering
-	\includegraphics[scale=.55]{fig/fitted_residuals_12.png}
+
+
+\begin{table}[!htbp] \centering 
+	\caption{Symbolic Racism Scale Items 2016} 
+	\label{} 
+	\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+		\\[-1.8ex]\hline \\[-1.8ex] 
+		\\[-1.8ex] & \multicolumn{1}{c}{Question 1} & \multicolumn{1}{c}{Question 2} & \multicolumn{1}{c}{Question 3} & \multicolumn{1}{c}{Question 4} \\ 
+		\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
+		\hline \\[-1.8ex] 
+		Political Sophistication & -0.200^{*} & -0.096 & -0.496^{***} & -0.349^{***} \\ 
+		& (0.103) & (0.103) & (0.102) & (0.105) \\ 
+		Female & -0.006 & 0.049 & -0.019 & 0.043 \\ 
+		& (0.037) & (0.037) & (0.036) & (0.037) \\ 
+		Education & -0.156^{***} & -0.160^{***} & -0.198^{***} & -0.225^{***} \\ 
+		& (0.024) & (0.024) & (0.024) & (0.025) \\ 
+		Economic Individualism & 0.435^{***} & 0.386^{***} & 0.316^{***} & 0.505^{***} \\ 
+		& (0.063) & (0.063) & (0.062) & (0.064) \\ 
+		Egalitarianism & -2.188^{***} & -2.131^{***} & -2.078^{***} & -1.896^{***} \\ 
+		& (0.166) & (0.164) & (0.162) & (0.168) \\ 
+		South & 0.196^{***} & 0.125^{**} & 0.176^{***} & 0.199^{***} \\ 
+		& (0.049) & (0.049) & (0.048) & (0.050) \\ 
+		Democrat & -0.362^{***} & -0.296^{***} & -0.377^{***} & -0.496^{***} \\ 
+		& (0.056) & (0.057) & (0.056) & (0.057) \\ 
+		Church Attendance & -0.117^{**} & -0.125^{***} & -0.138^{***} & -0.111^{**} \\ 
+		& (0.048) & (0.048) & (0.047) & (0.049) \\ 
+		Ideology & 0.001 & 0.003^{***} & 0.002^{***} & 0.002^{***} \\ 
+		& (0.001) & (0.001) & (0.001) & (0.001) \\ 
+		Black Feeling Therm. & -0.010^{***} & -0.008^{***} & -0.010^{***} & -0.011^{***} \\ 
+		& (0.001) & (0.001) & (0.001) & (0.001) \\ 
+		Age & 0.005^{***} & 0.003^{**} & 0.006^{***} & 0.012^{***} \\ 
+		& (0.001) & (0.001) & (0.001) & (0.001) \\ 
+		Social Media Use & 0.020^{**} & 0.021^{***} & 0.007 & 0.009 \\ 
+		& (0.008) & (0.008) & (0.008) & (0.008) \\ 
+		Income & 0.001 & 0.002 & -0.003 & -0.006^{*} \\ 
+		& (0.003) & (0.003) & (0.003) & (0.003) \\ 
+		N & \multicolumn{1}{c}{2,245} & \multicolumn{1}{c}{2,245} & \multicolumn{1}{c}{2,245} & \multicolumn{1}{c}{2,245} \\ 
+		\hline \\[-1.8ex] 
+		\multicolumn{5}{l}{$^{*}$p $<$ .1; $^{**}$p $<$ .05; $^{***}$p $<$ .01} \\ 
+	\end{tabular} 
+\end{table} 
+
+
+
+%\section{Diagnostics and Robustness}
+%This section presents a series of diagnostic and fit tests in order to better contextualize the results presented above.
+
+%\subsection{OLS Model}
+%To examine the appropriateness of the analysis presented in \ref{ols}, I first fit a normal probability plot. This assesses the normality of the distribution of the underlying data by plotting observed data quantiles against quantiles from a normal distribution. If the data are normally distributed, the points on the normal probability plot should coalesce around the 45-degree line. Indeed, \ref{qq} shows that the points coalesce along the 45-degree line, indicating normally distributed data. While normally distributed data is not necessary for OLS to produce non-biased estimates, this plot gives us a better sense of the underlying distribution of the data we're using in our model.
+
+%\begin{figure}[h!]
+%	\centering
+%	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/qq-12.png} }}%
+%	\qquad
+%	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/qq-16.png} }}%
+%	\caption{Normal Q-Q Plots for 2012-2016 OLS Models}%
+%	\label{qq}%
+%\end{figure}
+
+%To assess the OLS models for linearity and heteroskedasticity, as well as get a sense for whether there are outliers, I plot the residuals over the fitted values for both 2012 and 2016 models. If the data meet homoskedasticity assumptions, we should see the points ``bounce" randomly above and below the 0 line. Instead, there is a clear trend of higher residuals for lower fitted values and lower residuals for higher fitted values. Indeed, Bruesch-Pagan testing confirms that we can reject the null hypothesis of homoskedasticity (p = $0.00$ for both years).
+
+
+%\begin{figure}%
+%	\centering
+%	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/resid-fitted-12.png} }}%
+%	\qquad
+%	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/resid-fitted-16.png} }}%
+%	\caption{Residuals vs Fitted Values Plots for 2012-2016 OLS Models}%
+%	\label{resid}%
+%\end{figure}
+
+%Given this, the model would be more appropriately estimated with heteroskedastic robust standard errors. Table \ref{rob} plots the original analysis from Table \ref{ols} in Columns 1 and 3 and the same models estimated with heteroskedastic robust standard errors in Columns 2 and 4. Substantively, the results do not change by much, nor does the  statistical significance.
+
+%\subsection{Ordered Probit Models}
+%I estimate surrogate residuals to run comparable diagnostics on my ordered probit models \citep{liu_residuals_2018}. Figure \ref{fitted-resid-12} shows the residuals over fitted values plots for each of the 2012 symbolic racism items, corresponding to Columns 1 and 2 in Table \ref{indiv} and Columns 1 and 2 in Table \ref{structure}. The surrogate residuals ``bounce" randomly around the zero line and do not demonstrate pronounced trends, suggesting that heteroskedasticity is not a concern for these models.
+
+%\begin{figure}[h!]
+%		\centering
+%	\includegraphics[scale=.55]{fig/fitted_residuals_12.png}
 	%{\singlespacing
 	%	\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
 	%		Notes: Explain the figure here
 	%}}
-	\caption{Fitted Values over Residuals Plot for 2012 Symbolic Racism Items}
-	\label{fitted-resid-12}
-\end{figure}
+%	\caption{Fitted Values over Residuals Plot for 2012 Symbolic Racism Items}
+%	\label{fitted-resid-12}
+%\end{figure}
 
-Likewise, Figure \ref{fitted-resid-16} shows the same residuals over fitted values plot for Columns 3 and 4 in Table \ref{indiv} and Columns 3 and 4 in Table \ref{structure}. The surrogate residuals ``bounce" randomly around the zero line and do not demonstrate pronounced trends, suggesting that heteroskedasticity is not a concern for these models.
+%Likewise, Figure \ref{fitted-resid-16} shows the same residuals over fitted values plot for Columns 3 and 4 in Table \ref{indiv} and Columns 3 and 4 in Table \ref{structure}. The surrogate residuals ``bounce" randomly around the zero line and do not demonstrate pronounced trends, suggesting that heteroskedasticity is not a concern for these models.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=.55]{fig/fitted_residuals_16.png}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[scale=.55]{fig/fitted_residuals_16.png}
 	%{\singlespacing
 	%	\parbox{0.78\textwidth}{\scriptsize%\vspace{-0.25cm}
 	%		Notes: Explain the figure here
 	%}}
-	\caption{Fitted Values over Residuals Plot for 2016 Symbolic Racism Items}
-	\label{fitted-resid-16}
-\end{figure}
+%	\caption{Fitted Values over Residuals Plot for 2016 Symbolic Racism Items}
+%	\label{fitted-resid-16}
+%\end{figure}
 
-To examine whether the data are normally distributed, I estimate normal probability plots for each of the ordered probit models in Table \ref{indiv} and Table \ref{structure} by plotting the observed quantiles in the data against normal theoretical quantiles.  If the two distributions are similar, observations should line up on the 45-degree line ($x=y$). As we can see from Figure \ref{qq-2}, the observations line up on the 45-degree line, indicating that the data are normally distributed. 
+%To examine whether the data are normally distributed, I estimate normal probability plots for each of the ordered probit models in Table \ref{indiv} and Table \ref{structure} by plotting the observed quantiles in the data against normal theoretical quantiles.  If the two distributions are similar, observations should line up on the 45-degree line ($x=y$). As we can see from Figure \ref{qq-2}, the observations line up on the 45-degree line, indicating that the data are normally distributed. 
 
-\begin{figure}[H]
-	\centering
-	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/qq_12.png} }}%
-	\qquad
-	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/qq_16.png} }}%
-	\caption{Normal Q-Q Plots for 2012-2016 Ordered Probit Models}%
-	\label{qq-2}%
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\subfloat[\centering 2012]{{\includegraphics[width=5cm]{fig/qq_12.png} }}%
+%	\qquad
+%	\subfloat[\centering 2016]{{\includegraphics[width=5cm]{fig/qq_16.png} }}%
+%	\caption{Normal Q-Q Plots for 2012-2016 Ordered Probit Models}%
+%	\label{qq-2}%
+%\end{figure}
 
 
 \section{Discussion}
